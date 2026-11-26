@@ -2,6 +2,8 @@
 
 # Groundsocial MCP server
 
+[![Groundsocial MCP connector](https://glama.ai/mcp/connectors/io.github.shivanshmehendiratta/groundsocial/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.shivanshmehendiratta/groundsocial)
+
 Public social and web data for your AI agent, over MCP. One key, one credit balance, 77 platforms and 580+ read-only
 tools: Reddit, X, TikTok, Instagram, YouTube, LinkedIn, Bluesky, Threads, Hacker News, GitHub, Google Search, Amazon,
 App Store, Google Play, Spotify, Twitch, Trustpilot, Zillow and more. Every response keeps the platform's own JSON shape
