@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "groundsocial": {
+      "url": "https://api.groundsocial.dev/mcp",
+      "headers": { "Authorization": "Bearer gs_live_..." }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.shivanshmehendiratta/groundsocial",
+  "title": "Groundsocial",
+  "description": "Public social and web data from 77 platforms (Reddit, X, TikTok, YouTube, Google...) as JSON.",
+  "version": "1.0.0",
+  "websiteUrl": "https://groundsocial.dev",
+  "repository": {
+    "url": "https://github.com/shivanshmehendiratta/groundsocial-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://groundsocial.dev/icon.svg",
+      "mimeType": "image/svg+xml"
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.groundsocial.dev/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token with your Groundsocial API key (gs_live_...). Optional for clients that sign in with OAuth.",
+          "isRequired": false,
+          "isSecret": true,
+          "value": "Bearer {GROUNDSOCIAL_API_KEY}"
+        }
+      ]
+    }
+  ]
+}

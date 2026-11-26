@@ -1,0 +1,12 @@
+{
+  "inputs": [
+    { "type": "promptString", "id": "groundsocial-key", "description": "Groundsocial API key", "password": true }
+  ],
+  "servers": {
+    "groundsocial": {
+      "type": "http",
+      "url": "https://api.groundsocial.dev/mcp",
+      "headers": { "Authorization": "Bearer ${input:groundsocial-key}" }
+    }
+  }
+}

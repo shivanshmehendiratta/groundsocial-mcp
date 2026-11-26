@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "groundsocial": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://api.groundsocial.dev/mcp",
+        "--header",
+        "Authorization: Bearer ${GROUNDSOCIAL_API_KEY}"
+      ],
+      "env": { "GROUNDSOCIAL_API_KEY": "gs_live_..." }
+    }
+  }
+}
