@@ -1,3 +1,5 @@
+<img src="assets/logo.svg" width="56" alt="Groundsocial logo">
+
 # Groundsocial MCP server
 
 Public social and web data for your AI agent, over MCP. One key, one credit balance, 77 platforms and 580+ read-only
@@ -90,7 +92,23 @@ Leave out `headers` to sign in with OAuth instead.
 }
 ```
 
-### Windsurf, Cline, Zed and other clients
+### Cline
+
+`cline_mcp_settings.json`:
+
+```json
+{
+  "mcpServers": {
+    "groundsocial": {
+      "type": "streamableHttp",
+      "url": "https://api.groundsocial.dev/mcp",
+      "headers": { "Authorization": "Bearer gs_live_..." }
+    }
+  }
+}
+```
+
+### Windsurf, Zed and other clients
 
 Any client that speaks Streamable HTTP can use the URL above with an `Authorization: Bearer <key>` header. Clients
 that only speak stdio can use `npx -y mcp-remote https://api.groundsocial.dev/mcp --header "Authorization: Bearer <key>"`.
