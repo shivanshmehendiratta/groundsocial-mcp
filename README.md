@@ -220,6 +220,12 @@ dashboard. Details: [groundsocial.dev/pricing](https://groundsocial.dev/pricing)
 - Errors say what to do next: every error has a `code`, a `hint` and a `retryable` flag.
 - The `utility_*` tools are free: endpoint search, plain-words task planning and cost estimates.
 
+## Agent skill
+
+[`skills/groundsocial/SKILL.md`](skills/groundsocial/SKILL.md) is an Agent Skill for Claude Code, Codex and other
+skill-aware agents that use the REST API instead of MCP. Copy the folder into your skills directory, for example
+`~/.claude/skills/groundsocial/`.
+
 ## Notes
 
 - Read-only, public data only. Nothing here posts, votes, follows or messages, and we never use your accounts or
